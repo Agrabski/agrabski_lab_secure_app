@@ -17,5 +17,5 @@ jobs:
       - name: Run Scan
         run: |
           mvn package
-	  docker run -e OSS_USERNAME=masolx303@gmail.com -e OSS_KEY=62aff7fc84b69f488f5b901b05657b63bff33780 -e MIXEWAY_URL=https://hub.mixeway.io -e MIXEWAY_KEY=b3065821-b14b-46f2-9921-422b5274534d -e MIXEWAY_PROJECT_ID=59 -e MODE=STANDALONE -e MIXEWAY_PROJECT_NAME=agrabski_lab_secure_app -e COMMIT_ID=test -e BRANCH=master -v /opt/lab_sec_audit/sast:/opt/sources mixeway/scanner:latest
+          docker run -e OSS_USERNAME=masolx303@gmail.com -e OSS_KEY=62aff7fc84b69f488f5b901b05657b63bff33780 -e MIXEWAY_URL=https://hub.mixeway.io -e MIXEWAY_KEY=b3065821-b14b-46f2-9921-422b5274534d -e MIXEWAY_PROJECT_ID=59 -e MODE=STANDALONE -e MIXEWAY_PROJECT_NAME=agrabski_lab_secure_app -e COMMIT_ID=test -e BRANCH=master -v /opt/lab_sec_audit/sast:/opt/sources mixeway/scanner:latest
 
